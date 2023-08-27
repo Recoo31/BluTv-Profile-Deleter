@@ -1,4 +1,8 @@
-import requests
+import os
+try:
+    import requests
+except:
+    os.system("pip install requests")
 
 def main():
     session = requests.Session()
